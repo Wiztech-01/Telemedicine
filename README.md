@@ -37,9 +37,3 @@ Intuitive Navigation: Easy-to-use interface with clear navigation paths for all 
 Data Security: Implementation of HTTPS, JWT-based authentication, and data encryption to protect user information.
 Compliance: Adherence to healthcare standards and regulations, ensuring that user data is handled with the utmost confidentiality.
 
-
-# Hands-on Project: Integrating frontend and backend
-
-## **Objective:**
-The objective of this assignment is to provide students with practical experience in integrating the frontend and the backend of a web application using Node.js and Express. Students will build the backend of the telemedicine application that includes patient management, doctor scheduling, appointment booking, and user authentication for patients. This project will help students understand how to create a rest api, perform CRUD operations, manage user authentication, and handle data securely and efficiently.
-
