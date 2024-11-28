@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telemedicine - Registration</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Registration Form -->
+    <div class="main-content">
+    <div class="form-container">
+      <h2>Registration Form</h2>
+      <form id="registrationForm" onsubmit="return validateRegistrationForm()">
+        <!-- Form Fields -->
+
+        <input type="name" id="name" name="name" placeholder="Name" required />
+        <br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+        <br />
+
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <br />
+
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          placeholder="Confirm Password"
+          required
+        />
+        <br /><br />
+
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="18"
+          max="100"
+          placeholder="Age"
+          required
+        />
+        <br /><br />
+
+        <select id="country" name="country" required>
+          <option value="">Select your country</option>
+          <option value="Kenya">Kenya</option>
+          <option value="Rwanda">Rwanda</option>
+          <option value="Burundi">Burundi</option>
+          <option value="Uganda">Uganda</option>
+          <option value="Tanzania">Tanzania</option>
+          <option value="Sudan">Sudan</option>
+          <!-- Add more countries as needed -->
+        </select>
+        <br /><br />
+
+        <input type="radio" id="male" name="gender" value="Male" required />
+        Male
+        <br />
+        <input type="radio" id="female" name="gender" value="Female" required />
+        Female <br /><br />
+        <div id="box">
+          <input type="checkbox" id="terms" name="terms" required/>  <p>I agree to the Terms and Conditions </p>
+       </div> <br />
+
+        <button type="submit">Register</button>
+        <div id="registrationError" class="error"></div>
+        <br />
+        <!-- Adjusted ID for error message -->
+      </form>
+
+      <section class="signup">
+        Already have an account? <a href="/login.html">Login here</a>
+      </section>
+    </div> 
+  </div> 
+
+    <footer class="regform">
+      <p>&copy; 2024 Telemedicine. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
